@@ -1,6 +1,15 @@
-# Bar chart: Average petal length per species
-grouped['petal length (cm)'].plot(kind='bar', color=['#4CAF50', '#FFC107', '#2196F3'], figsize=(8, 5))
-plt.title('Average Petal Length per Species')
-plt.xlabel('Species')
-plt.ylabel('Average Petal Length (cm)')
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Example data
+categories = ['A', 'B', 'C', 'D']
+values = [3, 7, 5, 9]
+
+# Create the bar chart
+x = np.arange(len(categories))
+plt.bar(x, values)
+plt.xticks(x, categories)
+plt.xlabel('Categories')
+plt.ylabel('Values')
+plt.title('Bar Chart Example')
 plt.show()
