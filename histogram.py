@@ -1,6 +1,12 @@
-# Histogram for petal length
-sns.histplot(data['petal length (cm)'], bins=20, kde=True, color='purple')
-plt.title('Distribution of Petal Length')
-plt.xlabel('Petal Length (cm)')
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate random data
+data = np.random.random(1000)
+
+# Plot the histogram
+plt.hist(data, bins=30)
+plt.xlabel('Value')
 plt.ylabel('Frequency')
+plt.title('Histogram of Random Data')
 plt.show()
