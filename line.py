@@ -1,7 +1,13 @@
-# Line plot for average measurements across species
-grouped.T.plot(kind='line', figsize=(10, 6))
-plt.title('Average Measurements Across Iris Species')
-plt.xlabel('Features')
-plt.ylabel('Mean Value')
-plt.legend(title='Species')
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Generate sample data
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Plot the data
+plt.plot(x, y)
+plt.xlabel('x')
+plt.ylabel('sin(x)')
+plt.title('Line Plot of sin(x)')
 plt.show()
